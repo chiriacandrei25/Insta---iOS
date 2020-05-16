@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="zc8-In-GEC">
+            <objects>
+                <viewController id="eFw-B0-qo5" customClass="SearchViewController" customModule="Insta" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="79e-V3-PcE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lG1-3O-s4d"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="WH0-AN-Nl9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SC9-Bx-7wx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3229" y="1213"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HIz-6p-bee">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationSearch" automaticallyAdjustsScrollViewInsets="NO" id="SGk-XG-f3J" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="aZi-DJ-uau">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RNy-hb-Woc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eFw-B0-qo5" kind="relationship" relationship="rootViewController" id="1kY-CG-o7f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jez-Sm-CRg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3229" y="442"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+    </resources>
+</document>

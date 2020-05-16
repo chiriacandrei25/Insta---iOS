@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notifications-->
+        <scene sceneID="ED4-VH-vNk">
+            <objects>
+                <viewController id="1zl-Ot-Zkk" customClass="NotificationsViewController" customModule="Insta" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1vX-Cb-h8b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hGP-hc-u5c"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Notifications" id="s11-RH-BF2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MxQ-9D-G3f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4845" y="1213"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dOd-Wh-Jye">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationNotifications" automaticallyAdjustsScrollViewInsets="NO" id="B64-P3-Ukn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" selectedImage="heart.fill" id="1QA-NH-Jfk">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vD2-hQ-cEj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1zl-Ot-Zkk" kind="relationship" relationship="rootViewController" id="dgX-HE-gni"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="buT-X1-dW6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4846" y="442"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+    </resources>
+</document>

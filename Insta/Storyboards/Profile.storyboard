@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="Kro-wI-Hnh">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X9l-rb-v5a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="00R-VL-nHf" customClass="ProfileViewController" customModule="Insta" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="THD-Jg-Mj3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="df9-7T-mqF">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Uk3-u6-Zdh">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7ob-as-qeu">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2X1-hw-bGc">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2X1-hw-bGc" firstAttribute="height" secondItem="7ob-as-qeu" secondAttribute="height" id="Eec-nA-HAG"/>
+                                        <constraint firstItem="2X1-hw-bGc" firstAttribute="width" secondItem="7ob-as-qeu" secondAttribute="width" id="LBy-al-nQC"/>
+                                        <constraint firstItem="2X1-hw-bGc" firstAttribute="centerX" secondItem="7ob-as-qeu" secondAttribute="centerX" id="QmB-aW-bl2"/>
+                                        <constraint firstItem="2X1-hw-bGc" firstAttribute="centerY" secondItem="7ob-as-qeu" secondAttribute="centerY" id="uKa-72-v1t"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                            </collectionViewCell>
+                        </cells>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Profile" id="pjI-De-CAY"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="5808.6956521739139" y="1210.0446428571429"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="muE-0i-fEE">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationProfile" automaticallyAdjustsScrollViewInsets="NO" id="26p-mD-vHh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" selectedImage="person.fill" id="RY1-8l-WQA">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kgq-sD-btr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="00R-VL-nHf" kind="relationship" relationship="rootViewController" id="O1g-XM-yLq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xiG-oU-a7h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5719" y="442"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+    </resources>
+</document>
